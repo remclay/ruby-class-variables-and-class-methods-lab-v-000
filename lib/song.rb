@@ -39,5 +39,5 @@ class Song
     artist_count = {}
   artist_count
   end
-  
+
 end
