@@ -32,7 +32,7 @@ attr_accessor :name, :artist, :genre
 
 
   def self.genre_count
-    genre_count = Hash.new(0)
+    genre_count = {}
     @@genres.each do |genre|
       if genre_count.has_key?(genre)
         genre_count[genre]=1
