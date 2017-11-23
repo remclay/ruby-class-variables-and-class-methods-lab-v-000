@@ -11,10 +11,12 @@ attr_accessor :name, :artist, :genre
 
   def self.genres
     @@genres
+    # remove duplicates
   end
 
   def self.artists
-    
+    @@artists
+    #remove duplicates
   end
 
   def initialize(name, artist, genre)
@@ -23,6 +25,7 @@ attr_accessor :name, :artist, :genre
     @genre = genre
     @@count += 1
     @@genres << genre
+    @@artists << artist
   end
 
 
