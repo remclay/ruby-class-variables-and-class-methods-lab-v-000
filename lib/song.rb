@@ -3,6 +3,7 @@ require 'pry'
 class Song
 
   attr_accessor :name, :artist, :genre
+
   @@count = 0
   @@genres = []
   @@artists = []
@@ -37,7 +38,9 @@ class Song
 
   def self.artist_count
     artist_count = {}
-  artist_count
+    @@artist.each do |artist| artist_count.has_key?(artist) ? 
+    end
+    artist_count
   end
 
 end
