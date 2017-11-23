@@ -36,10 +36,10 @@ attr_accessor :name, :artist, :genre
     @@genres.each do |genre, count|
       if genre_count[genre]
         genre_count[count] += 1
-      else 
+      else
         genre_count[genre] = 0
         genre_count[count] += 1
-      
+end
 
   #    genre_count[genre] ||= genre_count[genre] => 0
   #    genre_count[count] += 1
